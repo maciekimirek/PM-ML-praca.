@@ -1,0 +1,167 @@
+Order_ID,Activity,Timestamp,Customer_Name,Order_Source,Region,Order_Value,Items_Count,Discount
+CASE_1,Złożenie zamówienia,2024-01-07 00:00:00,Katarzyna Zielińska,Online,Wschód,379.4,5,7.8
+CASE_1,Wysyłka,2024-01-07 03:00:00,Katarzyna Zielińska,Online,Wschód,379.4,5,7.8
+CASE_1,Ocena,2024-01-07 04:00:00,Katarzyna Zielińska,Online,Wschód,379.4,5,7.8
+CASE_1,Dostawa,2024-01-07 06:00:00,Katarzyna Zielińska,Online,Wschód,379.4,5,7.8
+CASE_1,Płatność,2024-01-07 09:00:00,Katarzyna Zielińska,Online,Wschód,379.4,5,7.8
+CASE_10,Złożenie zamówienia,2024-01-30 00:00:00,Michał Kamiński,Sklep,Zachód,336.9,3,23.61
+CASE_10,Wysyłka,2024-01-30 03:00:00,Michał Kamiński,Sklep,Zachód,336.9,3,23.61
+CASE_10,Dostawa,2024-01-30 04:00:00,Michał Kamiński,Sklep,Zachód,336.9,3,23.61
+CASE_10,Ocena,2024-01-30 04:00:00,Michał Kamiński,Sklep,Zachód,336.9,3,23.61
+CASE_10,Płatność,2024-01-30 09:00:00,Michał Kamiński,Sklep,Zachód,336.9,3,23.61
+CASE_100,Złożenie zamówienia,2024-01-30 00:00:00,Piotr Wiśniewski,Telefon,Północ,398.99,2,26.22
+CASE_100,Weryfikacja,2024-01-30 02:00:00,Piotr Wiśniewski,Telefon,Północ,398.99,2,26.22
+CASE_100,Wysyłka,2024-01-30 04:00:00,Piotr Wiśniewski,Telefon,Północ,398.99,2,26.22
+CASE_100,Dostawa,2024-01-30 06:00:00,Piotr Wiśniewski,Telefon,Północ,398.99,2,26.22
+CASE_100,Płatność,2024-01-30 12:00:00,Piotr Wiśniewski,Telefon,Północ,398.99,2,26.22
+CASE_11,Złożenie zamówienia,2024-01-05 00:00:00,Jan Nowak,Sklep,Wschód,165.23,9,35.53
+CASE_11,Wysyłka,2024-01-05 02:00:00,Jan Nowak,Sklep,Wschód,165.23,9,35.53
+CASE_11,Dostawa,2024-01-05 02:00:00,Jan Nowak,Sklep,Wschód,165.23,9,35.53
+CASE_11,Płatność,2024-01-05 09:00:00,Jan Nowak,Sklep,Wschód,165.23,9,35.53
+CASE_11,Ocena,2024-01-05 12:00:00,Jan Nowak,Sklep,Wschód,165.23,9,35.53
+CASE_12,Złożenie zamówienia,2024-01-07 00:00:00,Anna Kowalska,Online,Zachód,362.98,5,12.46
+CASE_12,Wysyłka,2024-01-07 03:00:00,Anna Kowalska,Online,Zachód,362.98,5,12.46
+CASE_12,Płatność,2024-01-07 03:00:00,Anna Kowalska,Online,Zachód,362.98,5,12.46
+CASE_12,Ocena,2024-01-07 04:00:00,Anna Kowalska,Online,Zachód,362.98,5,12.46
+CASE_12,Dostawa,2024-01-07 06:00:00,Anna Kowalska,Online,Zachód,362.98,5,12.46
+CASE_13,Złożenie zamówienia,2024-01-07 00:00:00,Piotr Wiśniewski,Sklep,Południe,446.21,9,5.27
+CASE_13,Wysyłka,2024-01-07 02:00:00,Piotr Wiśniewski,Sklep,Południe,446.21,9,5.27
+CASE_13,Dostawa,2024-01-07 06:00:00,Piotr Wiśniewski,Sklep,Południe,446.21,9,5.27
+CASE_13,Płatność,2024-01-07 06:00:00,Piotr Wiśniewski,Sklep,Południe,446.21,9,5.27
+CASE_13,Ocena,2024-01-07 12:00:00,Piotr Wiśniewski,Sklep,Południe,446.21,9,5.27
+CASE_14,Złożenie zamówienia,2024-01-28 00:00:00,Anna Kowalska,Sklep,Południe,99.52,9,32.38
+CASE_14,Wysyłka,2024-01-28 01:00:00,Anna Kowalska,Sklep,Południe,99.52,9,32.38
+CASE_14,Dostawa,2024-01-28 02:00:00,Anna Kowalska,Sklep,Południe,99.52,9,32.38
+CASE_14,Płatność,2024-01-28 09:00:00,Anna Kowalska,Sklep,Południe,99.52,9,32.38
+CASE_14,Ocena,2024-01-28 12:00:00,Anna Kowalska,Sklep,Południe,99.52,9,32.38
+CASE_15,Wysyłka,2024-01-06 00:00:00,Piotr Wiśniewski,Online,Południe,149.95,3,13.47
+CASE_15,Wysyłka,2024-01-06 03:00:00,Piotr Wiśniewski,Online,Południe,149.95,3,13.47
+CASE_15,Płatność,2024-01-06 03:00:00,Piotr Wiśniewski,Online,Południe,149.95,3,13.47
+CASE_15,Dostawa,2024-01-06 04:00:00,Piotr Wiśniewski,Online,Południe,149.95,3,13.47
+CASE_15,Ocena,2024-01-06 04:00:00,Piotr Wiśniewski,Online,Południe,149.95,3,13.47
+CASE_16,Złożenie zamówienia,2024-01-30 00:00:00,Anna Kowalska,Telefon,Zachód,161.09,7,24.86
+CASE_16,Wysyłka,2024-01-30 01:00:00,Anna Kowalska,Telefon,Zachód,161.09,7,24.86
+CASE_16,Dostawa,2024-01-30 02:00:00,Anna Kowalska,Telefon,Zachód,161.09,7,24.86
+CASE_16,Płatność,2024-01-30 03:00:00,Anna Kowalska,Telefon,Zachód,161.09,7,24.86
+CASE_16,Ocena,2024-01-30 12:00:00,Anna Kowalska,Telefon,Zachód,161.09,7,24.86
+CASE_17,Złożenie zamówienia,2024-01-17 00:00:00,Jan Nowak,Telefon,Zachód,73.17,5,17.25
+CASE_17,Wysyłka,2024-01-17 03:00:00,Jan Nowak,Telefon,Zachód,73.17,5,17.25
+CASE_17,Dostawa,2024-01-17 04:00:00,Jan Nowak,Telefon,Zachód,73.17,5,17.25
+CASE_17,Ocena,2024-01-17 04:00:00,Jan Nowak,Telefon,Zachód,73.17,5,17.25
+CASE_17,Płatność,2024-01-17 06:00:00,Jan Nowak,Telefon,Zachód,73.17,5,17.25
+CASE_18,Złożenie zamówienia,2024-01-12 00:00:00,Jan Nowak,Telefon,Zachód,316.71,7,38.08
+CASE_18,Wysyłka,2024-01-12 01:00:00,Jan Nowak,Telefon,Zachód,316.71,7,38.08
+CASE_18,Ocena,2024-01-12 04:00:00,Jan Nowak,Telefon,Zachód,316.71,7,38.08
+CASE_18,Dostawa,2024-01-12 06:00:00,Jan Nowak,Telefon,Zachód,316.71,7,38.08
+CASE_18,Płatność,2024-01-12 06:00:00,Jan Nowak,Telefon,Zachód,316.71,7,38.08
+CASE_19,Złożenie zamówienia,2024-01-20 00:00:00,Jan Nowak,Telefon,Południe,291.1,1,7.54
+CASE_19,Wysyłka,2024-01-20 02:00:00,Jan Nowak,Telefon,Południe,291.1,1,7.54
+CASE_19,Dostawa,2024-01-20 02:00:00,Jan Nowak,Telefon,Południe,291.1,1,7.54
+CASE_19,Płatność,2024-01-20 09:00:00,Jan Nowak,Telefon,Południe,291.1,1,7.54
+CASE_19,Ocena,2024-01-20 12:00:00,Jan Nowak,Telefon,Południe,291.1,1,7.54
+CASE_2,Złożenie zamówienia,2024-01-04 00:00:00,Piotr Wiśniewski,Telefon,Północ,486.46,6,0.04
+CASE_2,Wysyłka,2024-01-04 01:00:00,Piotr Wiśniewski,Telefon,Północ,486.46,6,0.04
+CASE_2,Dostawa,2024-01-04 04:00:00,Piotr Wiśniewski,Telefon,Północ,486.46,6,0.04
+CASE_2,Ocena,2024-01-04 04:00:00,Piotr Wiśniewski,Telefon,Północ,486.46,6,0.04
+CASE_2,Płatność,2024-01-04 06:00:00,Piotr Wiśniewski,Telefon,Północ,486.46,6,0.04
+CASE_20,Złożenie zamówienia,2024-01-04 00:00:00,Piotr Wiśniewski,Telefon,Wschód,414.28,4,32.26
+CASE_20,Wysyłka,2024-01-04 01:00:00,Piotr Wiśniewski,Telefon,Wschód,414.28,4,32.26
+CASE_20,Ocena,2024-01-04 04:00:00,Piotr Wiśniewski,Telefon,Wschód,414.28,4,32.26
+CASE_20,Dostawa,2024-01-04 06:00:00,Piotr Wiśniewski,Telefon,Wschód,414.28,4,32.26
+CASE_20,Płatność,2024-01-04 06:00:00,Piotr Wiśniewski,Telefon,Wschód,414.28,4,32.26
+CASE_21,Złożenie zamówienia,2024-01-11 00:00:00,Katarzyna Zielińska,Online,Północ,144.08,3,11.43
+CASE_21,Wysyłka,2024-01-11 01:00:00,Katarzyna Zielińska,Online,Północ,144.08,3,11.43
+CASE_21,Dostawa,2024-01-11 02:00:00,Katarzyna Zielińska,Online,Północ,144.08,3,11.43
+CASE_21,Ocena,2024-01-11 04:00:00,Katarzyna Zielińska,Online,Północ,144.08,3,11.43
+CASE_21,Płatność,2024-01-11 06:00:00,Katarzyna Zielińska,Online,Północ,144.08,3,11.43
+CASE_22,Złożenie zamówienia,2024-01-16 00:00:00,Katarzyna Zielińska,Online,Północ,447.19,7,16.95
+CASE_22,Wysyłka,2024-01-16 03:00:00,Katarzyna Zielińska,Online,Północ,447.19,7,16.95
+CASE_22,Ocena,2024-01-16 04:00:00,Katarzyna Zielińska,Online,Północ,447.19,7,16.95
+CASE_22,Dostawa,2024-01-16 06:00:00,Katarzyna Zielińska,Online,Północ,447.19,7,16.95
+CASE_22,Płatność,2024-01-16 06:00:00,Katarzyna Zielińska,Online,Północ,447.19,7,16.95
+CASE_23,Złożenie zamówienia,2024-01-24 00:00:00,Katarzyna Zielińska,Sklep,Północ,122.73,6,33.45
+CASE_23,Wysyłka,2024-01-24 03:00:00,Katarzyna Zielińska,Sklep,Północ,122.73,6,33.45
+CASE_23,Płatność,2024-01-24 03:00:00,Katarzyna Zielińska,Sklep,Północ,122.73,6,33.45
+CASE_23,Dostawa,2024-01-24 04:00:00,Katarzyna Zielińska,Sklep,Północ,122.73,6,33.45
+CASE_23,Ocena,2024-01-24 12:00:00,Katarzyna Zielińska,Sklep,Północ,122.73,6,33.45
+CASE_24,Złożenie zamówienia,2024-01-25 00:00:00,Michał Kamiński,Telefon,Zachód,187.41,2,34.59
+CASE_24,Wysyłka,2024-01-25 01:00:00,Michał Kamiński,Telefon,Zachód,187.41,2,34.59
+CASE_24,Dostawa,2024-01-25 02:00:00,Michał Kamiński,Telefon,Zachód,187.41,2,34.59
+CASE_24,Płatność,2024-01-25 03:00:00,Michał Kamiński,Telefon,Zachód,187.41,2,34.59
+CASE_24,Ocena,2024-01-25 08:00:00,Michał Kamiński,Telefon,Zachód,187.41,2,34.59
+CASE_25,Złożenie zamówienia,2024-01-21 00:00:00,Katarzyna Zielińska,Sklep,Wschód,345.93,1,27.13
+CASE_25,Wysyłka,2024-01-21 03:00:00,Katarzyna Zielińska,Sklep,Wschód,345.93,1,27.13
+CASE_25,Dostawa,2024-01-21 04:00:00,Katarzyna Zielińska,Sklep,Wschód,345.93,1,27.13
+CASE_25,Ocena,2024-01-21 08:00:00,Katarzyna Zielińska,Sklep,Wschód,345.93,1,27.13
+CASE_25,Płatność,2024-01-21 09:00:00,Katarzyna Zielińska,Sklep,Wschód,345.93,1,27.13
+CASE_26,Złożenie zamówienia,2024-01-14 00:00:00,Michał Kamiński,Sklep,Południe,457.74,2,17.5
+CASE_26,Dostawa,2024-01-14 02:00:00,Michał Kamiński,Sklep,Południe,457.74,2,17.5
+CASE_26,Wysyłka,2024-01-14 03:00:00,Michał Kamiński,Sklep,Południe,457.74,2,17.5
+CASE_26,Płatność,2024-01-14 03:00:00,Michał Kamiński,Sklep,Południe,457.74,2,17.5
+CASE_26,Ocena,2024-01-14 04:00:00,Michał Kamiński,Sklep,Południe,457.74,2,17.5
+CASE_27,Złożenie zamówienia,2024-01-16 00:00:00,Piotr Wiśniewski,Sklep,Zachód,340.46,1,49.73
+CASE_27,Wysyłka,2024-01-16 01:00:00,Piotr Wiśniewski,Sklep,Zachód,340.46,1,49.73
+CASE_27,Płatność,2024-01-16 03:00:00,Piotr Wiśniewski,Sklep,Zachód,340.46,1,49.73
+CASE_27,Dostawa,2024-01-16 04:00:00,Piotr Wiśniewski,Sklep,Zachód,340.46,1,49.73
+CASE_27,Ocena,2024-01-16 08:00:00,Piotr Wiśniewski,Sklep,Zachód,340.46,1,49.73
+CASE_28,Złożenie zamówienia,2024-01-03 00:00:00,Katarzyna Zielińska,Online,Północ,467.74,1,27.64
+CASE_28,Dostawa,2024-01-03 02:00:00,Katarzyna Zielińska,Online,Północ,467.74,1,27.64
+CASE_28,Wysyłka,2024-01-03 03:00:00,Katarzyna Zielińska,Online,Północ,467.74,1,27.64
+CASE_28,Ocena,2024-01-03 04:00:00,Katarzyna Zielińska,Online,Północ,467.74,1,27.64
+CASE_28,Płatność,2024-01-03 09:00:00,Katarzyna Zielińska,Online,Północ,467.74,1,27.64
+CASE_29,Złożenie zamówienia,2024-01-21 00:00:00,Anna Kowalska,Sklep,Zachód,217.71,6,34.8
+CASE_29,Wysyłka,2024-01-21 02:00:00,Anna Kowalska,Sklep,Zachód,217.71,6,34.8
+CASE_29,Dostawa,2024-01-21 06:00:00,Anna Kowalska,Sklep,Zachód,217.71,6,34.8
+CASE_29,Płatność,2024-01-21 06:00:00,Anna Kowalska,Sklep,Zachód,217.71,6,34.8
+CASE_29,Ocena,2024-01-21 12:00:00,Anna Kowalska,Sklep,Zachód,217.71,6,34.8
+CASE_3,Złożenie zamówienia,2024-01-12 00:00:00,Anna Kowalska,Online,Wschód,325.33,3,19.12
+CASE_3,Dostawa,2024-01-12 02:00:00,Anna Kowalska,Online,Wschód,325.33,3,19.12
+CASE_3,Wysyłka,2024-01-12 03:00:00,Anna Kowalska,Online,Wschód,325.33,3,19.12
+CASE_3,Płatność,2024-01-12 09:00:00,Anna Kowalska,Online,Wschód,325.33,3,19.12
+CASE_3,Ocena,2024-01-12 12:00:00,Anna Kowalska,Online,Wschód,325.33,3,19.12
+CASE_30,Złożenie zamówienia,2024-01-02 00:00:00,Piotr Wiśniewski,Telefon,Południe,195.15,8,34.85
+CASE_30,Wysyłka,2024-01-02 02:00:00,Piotr Wiśniewski,Telefon,Południe,195.15,8,34.85
+CASE_30,Płatność,2024-01-02 03:00:00,Piotr Wiśniewski,Telefon,Południe,195.15,8,34.85
+CASE_30,Dostawa,2024-01-02 06:00:00,Piotr Wiśniewski,Telefon,Południe,195.15,8,34.85
+CASE_30,Ocena,2024-01-02 08:00:00,Piotr Wiśniewski,Telefon,Południe,195.15,8,34.85
+CASE_31,Złożenie zamówienia,2024-01-23 00:00:00,Jan Nowak,Sklep,Południe,440.18,7,25.08
+CASE_31,Wysyłka,2024-01-23 01:00:00,Jan Nowak,Sklep,Południe,440.18,7,25.08
+CASE_31,Dostawa,2024-01-23 04:00:00,Jan Nowak,Sklep,Południe,440.18,7,25.08
+CASE_31,Płatność,2024-01-23 06:00:00,Jan Nowak,Sklep,Południe,440.18,7,25.08
+CASE_31,Ocena,2024-01-23 12:00:00,Jan Nowak,Sklep,Południe,440.18,7,25.08
+CASE_32,Złożenie zamówienia,2024-01-23 00:00:00,Katarzyna Zielińska,Telefon,Południe,247.31,6,16.41
+CASE_32,Wysyłka,2024-01-23 03:00:00,Katarzyna Zielińska,Telefon,Południe,247.31,6,16.41
+CASE_32,Płatność,2024-01-23 03:00:00,Katarzyna Zielińska,Telefon,Południe,247.31,6,16.41
+CASE_32,Dostawa,2024-01-23 04:00:00,Katarzyna Zielińska,Telefon,Południe,247.31,6,16.41
+CASE_32,Ocena,2024-01-23 08:00:00,Katarzyna Zielińska,Telefon,Południe,247.31,6,16.41
+CASE_33,Złożenie zamówienia,2024-01-26 00:00:00,Jan Nowak,Telefon,Północ,66.81,6,15.16
+CASE_33,Wysyłka,2024-01-26 01:00:00,Jan Nowak,Telefon,Północ,66.81,6,15.16
+CASE_33,Dostawa,2024-01-26 02:00:00,Jan Nowak,Telefon,Północ,66.81,6,15.16
+CASE_33,Płatność,2024-01-26 03:00:00,Jan Nowak,Telefon,Północ,66.81,6,15.16
+CASE_33,Ocena,2024-01-26 04:00:00,Jan Nowak,Telefon,Północ,66.81,6,15.16
+CASE_34,Złożenie zamówienia,2024-01-07 00:00:00,Katarzyna Zielińska,Telefon,Północ,137.47,3,31.87
+CASE_34,Wysyłka,2024-01-07 02:00:00,Katarzyna Zielińska,Telefon,Północ,137.47,3,31.87
+CASE_34,Dostawa,2024-01-07 04:00:00,Katarzyna Zielińska,Telefon,Północ,137.47,3,31.87
+CASE_34,Płatność,2024-01-07 06:00:00,Katarzyna Zielińska,Telefon,Północ,137.47,3,31.87
+CASE_34,Ocena,2024-01-07 12:00:00,Katarzyna Zielińska,Telefon,Północ,137.47,3,31.87
+CASE_35,Złożenie zamówienia,2024-01-17 00:00:00,Piotr Wiśniewski,Telefon,Wschód,162.89,5,4.04
+CASE_35,Wysyłka,2024-01-17 01:00:00,Piotr Wiśniewski,Telefon,Wschód,162.89,5,4.04
+CASE_35,Dostawa,2024-01-17 02:00:00,Piotr Wiśniewski,Telefon,Wschód,162.89,5,4.04
+CASE_35,Płatność,2024-01-17 03:00:00,Piotr Wiśniewski,Telefon,Wschód,162.89,5,4.04
+CASE_35,Ocena,2024-01-17 08:00:00,Piotr Wiśniewski,Telefon,Wschód,162.89,5,4.04
+CASE_36,Złożenie zamówienia,2024-01-26 00:00:00,Anna Kowalska,Sklep,Południe,157.9,6,35.73
+CASE_36,Wysyłka,2024-01-26 01:00:00,Anna Kowalska,Sklep,Południe,157.9,6,35.73
+CASE_36,Dostawa,2024-01-26 02:00:00,Anna Kowalska,Sklep,Południe,157.9,6,35.73
+CASE_36,Płatność,2024-01-26 03:00:00,Anna Kowalska,Sklep,Południe,157.9,6,35.73
+CASE_36,Ocena,2024-01-26 12:00:00,Anna Kowalska,Sklep,Południe,157.9,6,35.73
+CASE_37,Złożenie zamówienia,2024-01-05 00:00:00,Michał Kamiński,Sklep,Wschód,161.48,3,37.89
+CASE_37,Wysyłka,2024-01-05 01:00:00,Michał Kamiński,Sklep,Wschód,161.48,3,37.89
+CASE_37,Płatność,2024-01-05 03:00:00,Michał Kamiński,Sklep,Wschód,161.48,3,37.89
+CASE_37,Dostawa,2024-01-05 04:00:00,Michał Kamiński,Sklep,Wschód,161.48,3,37.89
+CASE_37,Ocena,2024-01-05 12:00:00,Michał Kamiński,Sklep,Wschód,161.48,3,37.89
+CASE_38,Złożenie zamówienia,2024-01-17 00:00:00,Katarzyna Zielińska,Online,Zachód,57.72,5,23.67
+CASE_38,Wysyłka,2024-01-17 02:00:00,Katarzyna Zielińska,Online,Zachód,57.72,5,23.67
+CASE_38,Płatność,2024-01-17 03:00:00,Katarzyna Zielińska,Online,Zachód,57.72,5,23.67
+CASE_38,Dostawa,2024-01-17 04:00:00,Katarzyna Zielińska,Online,Zachód,57.72,5,23.67
+CASE_38,Ocena,2024-01-17 12:00:00,Katarzyna Zielińska,Online,Zachód,57.72,5,23.67
+
