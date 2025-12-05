@@ -82,7 +82,7 @@ print(pd.DataFrame(confusion_matrix(y_test, y_pred),
 
 print(agg['duration_class'].value_counts())
 
-#Dalej to rozwinac i dodac moze wiecej parametrod do X jak na przyklad czas pomiedzy konkretnymi aktywnosciami
+#Wynki nie sa zadawalajace, trzeba to rozwinac o wieksza ilosc parametrow.
 
 
 
