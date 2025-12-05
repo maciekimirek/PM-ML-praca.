@@ -145,5 +145,5 @@ print("TOP 10 Najważniejszych cech")
 print(importances_xgb.head(10).to_string())
 
 ## Widzimy bardzo podobne wyniki co do Random Forest - TOP3 jest takie samo.
-## Jedyna znaczaca roznica jest taka, ze XGBOOST wieksza uwage przykuwa do regionu (wschód). 0.07 vs 0.003 (Forest)
+## Jedyna znaczaca roznica jest taka, ze XGBOOST wieksza uwage przykuwa do regionu (wschód).. 0.07 vs 0.003 (Forest)
 
