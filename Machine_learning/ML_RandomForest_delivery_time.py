@@ -15,9 +15,9 @@ df['Timestamp'] = pd.to_datetime(df['Timestamp'], format = "mixed")
 
 def compute_hours(g):
     first_activity = ["Złożenie zamówienia", "Weryfikacja", "Złożenie zamówienia", "Płatność",
-                      "Wysyłka", "Dostawa", "Dostawa", "Dostawa"]
+                      "Wysyłka", "Dostawa", "Dostawa", "Dostawa", "Zwrot"]
     second_activity = ["Weryfikacja", "Płatność", "Płatność", "Wysyłka",
-                       "Dostawa", "Ocena", "Zwrot", "Zwrot"]
+                       "Dostawa", "Ocena", "Zwrot", "Reklamacja", "Ocena"]
 
     results = {}
 
