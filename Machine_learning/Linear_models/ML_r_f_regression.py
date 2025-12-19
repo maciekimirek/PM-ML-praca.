@@ -6,7 +6,7 @@ from sklearn.preprocessing import OneHotEncoder
 from sklearn.ensemble import RandomForestRegressor
 from sklearn.metrics import mean_absolute_error, mean_squared_error, r2_score
 
-df = pd.read_csv('../Data_source/Event_log.csv')
+df = pd.read_csv('../../Data_source/Event_log.csv')
 df['Timestamp'] = pd.to_datetime(df['Timestamp'],format = "mixed")
 
 #agregacja danych potrzebna do pokazania parametrow per order

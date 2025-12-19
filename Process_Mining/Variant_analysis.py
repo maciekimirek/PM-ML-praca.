@@ -2,7 +2,7 @@ import pandas as pd
 import pm4py
 
 #Wczytywania event logu
-df = pd.read_csv('Event_log.csv', sep=',')
+df = pd.read_csv('../Data_source/Event_log.csv', sep=',')
 
 
 #Konwersja even logu na data frame zgodnie z wymogami PM4PY

@@ -10,7 +10,7 @@ from sklearn.preprocessing import OneHotEncoder, StandardScaler
 
 
 
-df = pd.read_csv('../Data_source/Event_log.csv')
+df = pd.read_csv('../../Data_source/Event_log.csv')
 df['Timestamp'] = pd.to_datetime(df['Timestamp'], format = "mixed")
 agg = df.groupby('Order_ID').agg(
     start_time=('Timestamp', 'min'),

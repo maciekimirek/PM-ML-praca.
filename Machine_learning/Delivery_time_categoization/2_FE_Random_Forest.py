@@ -4,9 +4,10 @@ import numpy as np
 from sklearn.metrics import confusion_matrix, accuracy_score, classification_report
 from sklearn.model_selection import train_test_split
 from sklearn.ensemble import RandomForestClassifier
-from sklearn.preprocessing import OneHotEncoder, StandardScaler
+from sklearn.preprocessing import OneHotEncoder
 
-df = pd.read_csv("Event_log.csv")
+
+df = pd.read_csv("../../Data_source/Event_log.csv")
 df['Timestamp'] = pd.to_datetime(df['Timestamp'], format = "mixed")
 
 #Wyodrebnianie cech procesowych
@@ -27,7 +28,7 @@ def compute_hours(g):
             ts2 = g.loc[g["Activity"] == a2, "Timestamp"].iloc[0]
             hours = (ts2 - ts1).total_seconds() / 3600
         except IndexError:
-            hours = None  # brak danych
+            hours = np.nan  # brak danych
 
         colname = f"hours_{a1}_to_{a2}"
         results[colname] = hours
@@ -35,7 +36,9 @@ def compute_hours(g):
     return pd.Series(results)
 
 #Pierwsza czesc dataframe
-df_cycletime = df.groupby("Order_ID").apply(compute_hours)
+df_cycletime = (
+    df.groupby("Order_ID").apply(compute_hours, include_groups=False)
+)
 
 #Wyodrębnienie wariantów, ilości aktywności i nadanie numeru konkretnemu wariantowi, aby moć te dane dopisać do oryginalnego DF i uzycz w Machine Learningu
 #Przygotowanie df do pracy z pm4py
@@ -45,13 +48,13 @@ rows = []
 variant_counter = 1
 
 for variant, subdf in pm4py.split_by_process_variant(df):
-    variant_name = variant_counter
+    variant_id = f"V{variant_counter}"
 
     for order_id in subdf["Order_ID"].unique():
         rows.append({
             "Order_ID": order_id,
             "variant_original": variant,
-            "variant_name": variant_name
+            "variant_id": variant_id
         })
 
     variant_counter += 1
@@ -99,7 +102,7 @@ X = df_final[['hours_Złożenie zamówienia_to_Weryfikacja',
        'hours_Weryfikacja_to_Płatność',
        'hours_Złożenie zamówienia_to_Płatność', 'hours_Płatność_to_Wysyłka',
        'hours_Wysyłka_to_Dostawa', 'hours_Dostawa_to_Ocena',
-       'hours_Dostawa_to_Zwrot', 'variant_name',
+       'hours_Dostawa_to_Zwrot', 'variant_id',
        'activities_count',
        'order_value', 'items', 'discount', 'region', 'source',]]
 
@@ -107,13 +110,13 @@ X_num = df_final[['hours_Złożenie zamówienia_to_Weryfikacja',
        'hours_Weryfikacja_to_Płatność',
        'hours_Złożenie zamówienia_to_Płatność', 'hours_Płatność_to_Wysyłka',
        'hours_Wysyłka_to_Dostawa', 'hours_Dostawa_to_Ocena',
-       'hours_Dostawa_to_Zwrot', 'variant_name',
+       'hours_Dostawa_to_Zwrot',
        'activities_count',
        'order_value', 'items', 'discount']]
 
 
 
-X_cat = df_final[['region', 'source']]
+X_cat = df_final[['region', 'source', 'variant_id']]
 
 encoder = OneHotEncoder(sparse_output=False, handle_unknown='ignore')
 X_cat_encoded = encoder.fit_transform(X_cat)
@@ -123,14 +126,18 @@ X_final = np.hstack([X_cat_encoded, X_num])
 
 X_train, X_test, y_train, y_test = train_test_split(X_final, y, test_size = 0.2, random_state= 42)
 
-scaler = StandardScaler()
-X_train_scaled = scaler.fit_transform(X_train)
-X_test_scaled = scaler.transform(X_test)
 
 # Random Forest
-rf = RandomForestClassifier(random_state=42, n_jobs=-1)
-rf.fit(X_train_scaled, y_train)
-y_pred = rf.predict(X_test_scaled)
+rf = RandomForestClassifier(
+    n_estimators=300,
+    max_depth=12,
+    min_samples_leaf=5,
+    random_state=42,
+    n_jobs=-1,
+    class_weight='balanced'
+)
+rf.fit(X_train, y_train)
+y_pred = rf.predict(X_test)
 print("RandomForest — accuracy:", accuracy_score(y_test, y_pred))
 print(classification_report(y_test, y_pred))
 print("Confusion matrix:")
@@ -149,5 +156,7 @@ print(importances_forest.head(10).to_string())
 ##Widzimy o wiele lepsze accuracy niz przy poprzedniej probie bez szczegółowych cech pocesowych.
 ##TOP3 najwazniejsze cechy to czas spędzony pomiędzy aktywnościami.
 ##W szczególności widać, że elementem, który najbardziej wpływa na czas dostawy jest bezpośrednio logistyka
+
+
 
 
