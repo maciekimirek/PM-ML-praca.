@@ -100,6 +100,5 @@ for i in heuristic_net_parameters_value:
     hn_vis.save(heuristic_net_visualization_parameters, f"heuristic_net_parameters{i}.png")
     print(f"Wizualizacja dla heuristic_net_parameters_value={i} została wyswietlona i zapisana.")
 
-#dalszy rozwoj pracy np z analiza wariantow..
 
 
