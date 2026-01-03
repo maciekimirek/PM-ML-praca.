@@ -1,30 +1,24 @@
 ##### N_ITER USTAWIONE na 1 - DO ZMIANY na PPROD
 
+import warnings
+warnings.filterwarnings(
+    "ignore",
+    category=UserWarning,
+    module="sklearn")
 import pandas as pd
 import numpy as np
-
 from scipy.stats import loguniform
 from scipy.stats import randint
 from scipy.stats import uniform
-
-
 from sklearn.preprocessing import OneHotEncoder
 from sklearn.compose import ColumnTransformer
 from sklearn.pipeline import Pipeline
 from sklearn.metrics import mean_absolute_error, mean_squared_error
 from sklearn.model_selection import RandomizedSearchCV, GroupKFold
 from sklearn.ensemble import  RandomForestRegressor
-
 import matplotlib.pyplot as plt
-
 import xgboost as xgb
 import lightgbm as lgb
-
-import warnings
-warnings.filterwarnings(
-    "ignore",
-    message="X does not have valid feature names"
-)
 
 # 1. Wczytywanie danaych
 
@@ -61,6 +55,8 @@ df['Timestamp'] = pd.to_datetime(df['Timestamp'], format="mixed")
 #                 (end_time - current_time).total_seconds() / 3600
 #             )
 #         })
+
+# 2. Budowa datasetu prefixowego
 
 rows = []
 
@@ -168,8 +164,6 @@ train_idx, test_idx = next(
 
 # y_log = np.log1p(y) danie nie sa "ognowate" to tylko pogarsza wynik
 X_train, X_test ,y_train, y_test = X.iloc[train_idx], X.iloc[test_idx], y.iloc[train_idx], y.iloc[test_idx]
-
-
 
 
 #  6. Przygotowanie Parametow
@@ -362,16 +356,32 @@ fi = pd.DataFrame({
     "importance": importances
 }).sort_values("importance", ascending=False)
 
+
+fi["feature"] = fi["feature"].str.replace("^num__", "", regex=True)
+fi["feature"] = fi["feature"].str.replace("^cat__", "", regex=True)
+fi["feature"] = fi["feature"].str.replace("_", " ", regex=True)
+
 print("\nWażność cech:")
-print(fi.head(20).to_string(index=False))
+print(
+    fi.head(10).to_string(
+        index=False,
+        formatters={"importance": "{:.4f}".format}
+    )
+)
+
 
 # 12. Wykres waznosci cech
 
-fi.head(20).plot(kind="barh", x="feature", y="importance")
-plt.title(f' Feature Importance dla {best_name}')
-plt.gca().invert_yaxis()
-plt.show()
+top10 = fi.sort_values("importance", ascending=False).head(10)
+top10 = top10.sort_values("importance", ascending=True)
 
+plt.figure(figsize=(10,7))
+plt.barh(top10["feature"], top10["importance"])
+plt.title(f'Feature importance dla {best_name}')
+plt.xlabel("Ważność cechy")
+plt.grid(axis="x", alpha=0.3)
+plt.tight_layout()
+plt.show()
 
 
 
